@@ -3,10 +3,20 @@ body {
   color: White;
 }
 
-.header {
-  text-align: right;
+.frontPage {
+  position: relative;
+  border: 3px solid white;
+  margin: auto;
+  text-align: center;
+  height: 300px;
+  width: 400px;
 }
 
-/*header {
-  background-image: ""
-}*/
+button {
+  font-size: 30px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background-color: Black;
+  color: White;
+  border: 1px solid White;
+}

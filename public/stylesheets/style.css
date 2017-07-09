@@ -12,7 +12,12 @@ body {
   width: 400px;
 }
 
-button {
+.frontForm {
+  display: inline-block;
+  width: 190px;
+}
+
+.front {
   font-size: 30px;
   padding: 10px 24px;
   border-radius: 8px;

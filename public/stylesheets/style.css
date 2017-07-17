@@ -25,3 +25,7 @@ body {
   color: White;
   border: 1px solid White;
 }
+
+.logout {
+  float: right;
+}

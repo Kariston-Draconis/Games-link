@@ -1,0 +1,31 @@
+<div class="frontPage">
+  <h1>Welcome <%= current_user.username %></h1>
+
+  <form action="/main" method="post">
+    <button class="front" type="submit" name="checkListings">Check Listings</button>
+  </form>
+
+  <br>
+  <br>
+
+  <form action="/post" method="post">
+    <button class="front" type="submit" name="newListing">Make new listing</button>
+  </form>
+</div>
+
+<h1>Your current listings</h1>
+
+<table>
+  <tr>
+    <th>GAME</th>
+    <th>DESCRIPTION</th>
+    <th>EDIT/DELETE</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><a href="/main/<%%= user >"><%= user['game'] %></a></td>
+      <td><%= user['description'] %></td>
+      <td><a href="#">Edit</a>/<a href="#">Delete</a></td>
+    </tr>
+  <% end %>
+</table>

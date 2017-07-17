@@ -3,6 +3,11 @@ body {
   color: White;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .frontPage {
   position: relative;
   border: 3px solid white;
@@ -27,5 +32,10 @@ body {
 }
 
 .logout {
-  float: right;
+  font-size: 15px;
+  height: 25px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: 1px solid White;
 }

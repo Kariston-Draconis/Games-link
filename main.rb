@@ -66,6 +66,12 @@ end
 post '/create_account' do
 # sql = "INSERT INTO users(username, email_address, password_digest) VALUES ('#{ params[:username] }', '#{ params[:email] }', '#{ params[:password] }');"
 #   run_sql(sql)
-  User.new({username: params[:username], email: params[:email], password: params[:password]})
+  user = User.new({username: params[:username], email_address: params[:email], password: params[:password]})
+  user.save
+  redirect '/'
+end
+
+delete '/session' do
+  session[:user_id] = nil
   redirect '/'
 end
